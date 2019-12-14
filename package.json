@@ -1,0 +1,77 @@
+{
+  "name": "history-lnu",
+  "version": "0.0.1",
+  "description": "History LNU",
+  "private": true,
+  "license": "ISC",
+  "author": {
+    "name": "Andrew Mudryk",
+    "email": "mudrykandrew@gmail.com"
+  },
+  "scripts": {
+    "db:create:dev": "./node_modules/.bin/sequelize db:create --config backend/sequelize/config.js --env development",
+    "db:create:prod": "./node_modules/.bin/sequelize db:create --config backend/sequelize/config.js --env production",
+    "db:drop:dev": "./node_modules/.bin/sequelize db:drop --config backend/sequelize/config.js --env development",
+    "db:drop:prod": "./node_modules/.bin/sequelize db:drop --config backend/sequelize/config.js --env production",
+    "db:migration:prod": "./node_modules/.bin/sequelize db:migrate --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env production",
+    "db:migration:dev": "./node_modules/.bin/sequelize db:migrate --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env development",
+    "db:reinit:dev": "npm run db:drop:dev && npm run db:create:dev && npm run db:migration:dev",
+    "db:reinit:prod": "npm run db:drop:prod && npm run db:create:prod && npm run db:migration:prod",
+    "db:status:prod": "./node_modules/.bin/sequelize db:migrate:status --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env production",
+    "db:status:dev": "./node_modules/.bin/sequelize db:migrate:status --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env development",
+    "db:revert:last:prod": "./node_modules/.bin/sequelize db:migrate:undo --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env production",
+    "db:revert:last:dev": "./node_modules/.bin/sequelize db:migrate:undo --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env development",
+    "db:revert:all:prod": "./node_modules/.bin/sequelize db:migrate:undo:all --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env production",
+    "db:revert:all:dev": "./node_modules/.bin/sequelize db:migrate:undo:all --migrations-path backend/sequelize/migrations --config backend/sequelize/config.js --env development",
+    "dev": "./node_modules/.bin/pm2 startOrRestart ecosystem.config.js --only \"lnu-frontend-dev,lnu-backend-dev\" --no-daemon",
+    "frontend:dev": "./node_modules/.bin/pm2 startOrRestart ecosystem.config.js --only lnu-frontend-dev --no-daemon",
+    "backend:dev": "./node_modules/.bin/pm2 startOrRestart ecosystem.config.js --only lnu-backend-dev --no-daemon",
+    "build": "./node_modules/.bin/pm2-docker --env production ecosystem.config.js --only lnu-app-build",
+    "start": "./node_modules/.bin/pm2 startOrRestart --env production ecosystem.config.js --only lnu-app",
+    "lint:backend:eslint": "./node_modules/.bin/eslint --config .eslintrc.js --ext .js backend --ignore-path .eslintignore --fix",
+    "lint:frontend:eslint": "./node_modules/.bin/eslint --ext .js,.vue frontend --ignore-path .eslintignore --fix",
+    "lint:frontend:sass": "./node_modules/.bin/sass-lint frontend/scss/**/*.scss --verbose --no-exit --config .sasslintrc --fix",
+    "lint:frontend:sass-vue": "./node_modules/.bin/sass-lint-vue frontend/components frontend/pages --config .sasslintrc --fix",
+    "precommit": "npm run lint:backend:eslint && npm run lint:frontend:eslint && npm run lint:frontend:sass && npm run lint:frontend:sass-vue"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
+    "compression": "^1.7.4",
+    "express": "^4.17.0",
+    "js-cookie": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "nuxt": "^2.7.1",
+    "pg": "^7.11.0",
+    "rollbar": "^2.7.0",
+    "sequelize": "^5.8.6",
+    "vue-carousel": "^0.18.0",
+    "vue-clickaway": "^2.2.2",
+    "vue-select": "^3.1.0",
+    "vue-tippy": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "csv-parser": "^2.3.0",
+    "eslint": "^5.16.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "husky": "^2.2.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.12.0",
+    "pm2": "^3.5.0",
+    "response-time": "^2.3.2",
+    "sass-lint": "^1.13.1",
+    "sass-lint-vue": "^0.3.3",
+    "sass-loader": "^7.1.0",
+    "sequelize-cli": "^5.4.0"
+  }
+}

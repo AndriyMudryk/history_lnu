@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+
+# Logs
+npm-debug.log
+
+# Nuxt build
+build
+
+# Webstorm
+.idea
+
+# Application log
+backend/log
+
+# Application temp
+backend/temp

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* 1. Import application variables */
+@import "~/scss/variables.scss";
+
+/* 2. Import Bootstrap 4 */
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+/* svg-icon styles added here to avoid blinking after component styles loaded */
+/* Fix SVG align to the text https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4 */
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+
+  svg {
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    bottom: -0.125em;
+  }
+
+  &.svg-no-baseline {
+
+    svg {
+      position: initial;
+      bottom: initial;
+    }
+  }
+}
+
+/* Styles for selected text */
+/*::selection {
+  background-color: #F2C500;
+  color: #F6F7F7;
+  text-shadow: none;
+}*/
