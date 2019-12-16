@@ -47,6 +47,14 @@
           <template slot="dropdownMenu">
             <a
               v-ripple
+              class="dropdown-item">
+              <svg-icon
+                icon="account"
+                class="logout-icon"/>
+              Admin Area
+            </a>
+            <a
+              v-ripple
               class="dropdown-item"
               @click="onLogoutClick">
               <svg-icon
