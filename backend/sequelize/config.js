@@ -10,7 +10,7 @@ while (i--) {
   }
 }
 const mode = processArgs[i + 1];
-const appName = mode === "development" ? "fh-backend-dev" : "fh-app";
+const appName = mode === "development" ? "lnu-backend-dev" : "lnu-app";
 const app = apps.find(// utils.getArrayItem(apps, "name", appName);
   function (app) {
     if (app.name === appName) {

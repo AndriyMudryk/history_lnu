@@ -84,5 +84,20 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+
+  .app {
+    width: 100vw;
+    height: 100vh;
+
+    .app-wrapper {
+      width: 100%;
+      height: 100%;
+
+      .app-content {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 </style>

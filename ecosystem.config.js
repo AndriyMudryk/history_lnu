@@ -9,6 +9,7 @@ const env_shared = {
   ROLLBAR_TOKEN: "",
 
   APP_VERSION: packageJson.version, // Version from package.json+ build number from version.json
+  APP_REVISION: "0.0.1",
   APP_NAME: packageJson.name,
   APP_DESCRIPTION: packageJson.description,
 
@@ -35,10 +36,10 @@ const env_develop = Object.assign(
 
     //# Database connections
     DB_TYPE: "postgres",
-    DB_HOST: "192.168.1.50",
+    DB_HOST: "localhost",
     DB_PORT: 5432,
     DB_USER: "postgres",
-    DB_PASSWORD: "postgres",
+    DB_PASSWORD: "admin",
     DB_NAME: "lnu-app",
 
     JWT_SECRET: "xKjef7GNsBuhb2d%!e"

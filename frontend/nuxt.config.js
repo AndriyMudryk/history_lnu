@@ -23,7 +23,6 @@ module.exports = {
     APP_REVISION: process.env.APP_REVISION,
     APP_NAME: process.env.APP_NAME,
     APP_DESCRIPTION: process.env.APP_DESCRIPTION,
-    APP_BUILD: process.env.APP_BUILD,
     FRONTEND_ROLLBAR_TOKEN: process.env.FRONTEND_ROLLBAR_TOKEN,
   },
 
@@ -50,8 +49,8 @@ module.exports = {
     link: [
       {
         rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
+        type: "image/png",
+        href: "/favicon.png"
       }
     ]
   },

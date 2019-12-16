@@ -38,15 +38,6 @@ module.exports = {
         }
       },
 
-      creator_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-          model: "users",
-          key: "id"
-        }
-      },
-
       created: {
         type: DataTypes.DATE,
         allowNull: false,
@@ -142,8 +133,7 @@ module.exports = {
               "name": "Andrew Mudryk",
               "email": "mudrykandrew@gmail.com",
               "pass": "$2a$10$OiI2wG.SRhkSVB02i2a8xubSABX/WvsOww3tL5RD/KgzYofjd6uCW",//"am"
-              "status_id": 2,
-              creator_id: 1
+              "status_id": 2
             }
           ]
         );

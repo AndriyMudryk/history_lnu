@@ -3,7 +3,7 @@ import helpers from "~/utils/helpers";
 import constants from "~/constants";
 
 const API_BASE_URL = constants.API_BASE_URL;
-//const restBaseUrl = API_BASE_URL + "/rest/api/v1";
+const restBaseUrl = API_BASE_URL + "/rest/api/v1";
 const authBaseUrl = API_BASE_URL + "/auth";
 
 export default {
@@ -26,5 +26,13 @@ export default {
         errorMessage: "Cannot login."
       });
     }
+  },
+
+  getPeriods() {
+    return axiosInstance({
+      method: "GET",
+      url: restBaseUrl + "/period",
+      errorMessage: "Cannot get periods."
+    });
   }
 };

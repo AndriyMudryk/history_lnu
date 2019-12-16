@@ -1,6 +1,6 @@
 <template>
   <section class="app-header">
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
         <a
           class="navbar-brand"
@@ -57,8 +57,8 @@
           </template>
         </dropdown>
         <span
-          class="text-white"
-          v-else>
+          v-else
+          class="text-white">
           <a
             v-ripple
             @click="onLoginClick">

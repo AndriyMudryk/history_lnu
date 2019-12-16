@@ -5,8 +5,8 @@ const logger = require(rootPath + "helpers/logger");
 
 const router = express.Router();
 
-// Authorization middleware for secure access to this resources uri (check all logged in users jwt token)
-router.use("/", require("./middlewares/authorization"));
+
+router.use("/period", require("./period"));
 
 // All authorized have access to the following routes. Further access is checked inside individual routes.
 //router.use("/cascade", require("./cascade"));
