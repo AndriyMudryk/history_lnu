@@ -34,5 +34,13 @@ export default {
       url: restBaseUrl + "/period",
       errorMessage: "Cannot get periods."
     });
+  },
+
+  getPeriod(periodId) {
+    return axiosInstance({
+      method: "GET",
+      url: restBaseUrl + "/period/" + periodId,
+      errorMessage: "Connot get period"
+    });
   }
 };

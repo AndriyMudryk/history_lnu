@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <a
           class="navbar-brand"
-          href="#">
+          href="/">
           <img
             alt="Vue logo"
             src="favicon.png"

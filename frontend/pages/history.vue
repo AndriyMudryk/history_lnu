@@ -3,7 +3,8 @@
     <div
       v-for="period in periods"
       :key="period.id"
-      class="period bg-dark d-flex align-items-center justify-content-center px-3 border border-light">
+      class="period bg-dark d-flex align-items-center justify-content-center px-3 border border-light"
+      @click="onPeriodClick(period.id)">
       <h4 class="title text-center">
         {{ period.title }}
       </h4>
@@ -15,17 +16,18 @@
 import api from "~/api";
 
 export default {
-/*  data() {
-    return {
-
-    };
-  },*/
-
   async asyncData() {
     const periods = await api.getPeriods();
     return {
       periods: periods
     };
+  },
+
+  methods: {
+    onPeriodClick(periodId) {
+      const me = this;
+      me.$router.push({name: "period", query: {id: periodId}})
+    }
   }
 };
 </script>
@@ -42,6 +44,7 @@ export default {
     opacity: 0.9;
     color: #FFFFFF;
     transition: opacity, flex 0.5s ease;
+    cursor: pointer;
 
     &:hover {
       opacity: 1;
