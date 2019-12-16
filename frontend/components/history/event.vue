@@ -23,10 +23,10 @@ export default {
   name: "Event",
 
   props: {
-  	direction: {
-  		type: Number,
-  		require: true
-  	},
+    direction: {
+      type: Number,
+      require: true
+    },
 
     event: {
       type: Object,

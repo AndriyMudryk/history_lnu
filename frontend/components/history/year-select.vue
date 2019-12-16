@@ -24,10 +24,10 @@ export default {
   name: "Event",
 
   props: {
-  	years: {
-  		type: Array,
-  		require: true
-  	}
+    years: {
+      type: Array,
+      require: true
+    }
   },
 
   data() {

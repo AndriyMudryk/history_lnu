@@ -3,11 +3,11 @@ export default function ({store, redirect, route}) {
   const fullPath = route.fullPath;
   const urlRequiresNonAuth = /^\/login(\/|$)/.test(fullPath);
 
-  /*if (!userIsLoggedIn && !urlRequiresNonAuth) {
+  if (!userIsLoggedIn && !urlRequiresNonAuth) {
     return redirect("/login");
   }
   if (userIsLoggedIn && urlRequiresNonAuth) {
     return redirect("/");// default page
   }
-  return Promise.resolve();*/
+  return Promise.resolve();
 }

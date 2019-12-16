@@ -80,79 +80,82 @@ export default {
 
 <style lang="scss">
 .landing {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 
-	.body {
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		top: 0;
-		z-index: 1;
-		background: transparent;
+  .body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: transparent;
 
-		.title {
-			.title-text-wrapper {
-				.lnu-title {
-					width: 400px;
-					height: 150px;
-					position: relative;
+    .title {
+      .title-text-wrapper {
+        .lnu-title {
+          width: 400px;
+          height: 150px;
+          position: relative;
 
-					.title-text {
-						z-index: 2;
-						padding-bottom: 20px;
-					}
+          .title-text {
+            z-index: 2;
+            padding-bottom: 20px;
+          }
 
-					.title-background {
-						z-index: -1;
-						position: absolute;
-						width: 100%;
-						height: 100%;
-						fill: #002561
-					}
-				}
+          .title-background {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            fill: #002561;
+          }
+        }
 
-				.more-info {
-					.text-blue {
-						color: #002561;
-					}
-				}
-			}
+        .more-info {
+          .text-blue {
+            color: #002561;
+          }
+        }
+      }
 
-			.btn {
-				border-radius: 0;
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-		}
-	}
+      .btn {
+        border-radius: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
 
-	.carousel-container {
-		width: 100vw;
-		height: 100vh;
+  .carousel-container {
+    width: 100vw;
+    height: 100vh;
 
-		.carousel-image {
-			width: 100vw;
-			height: 100vh;
-			object-fit: cover;
-			opacity: 0.8;
-		}
+    .carousel-image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.8;
+    }
 
-		.VueCarousel-slide-active {
-			.carousel-image {
-				-webkit-animation-name: move;
-				-webkit-animation-duration: 10s;
-				animation-name: move;
-				animation-duration: 10s;
+    .VueCarousel-slide-active { //sass-lint:disable-line class-name-format
+      .carousel-image {
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 10s;
+        animation-name: move;
+        animation-duration: 10s;
 
-				@keyframes move {
-					0%   {transform: scale(1.0);}
-					25%  {transform: scale(1.1);}
-					50%  {transform: scale(1.2);}
-					100% {transform: scale(1.1);}
-				}
-			}
-		}
-	}
+        @keyframes move {
+          0% {transform: scale(1);}
+
+          25% {transform: scale(1.1);}
+
+          50% {transform: scale(1.2);}
+
+          100% {transform: scale(1.1);}
+        }
+      }
+    }
+  }
 }
 </style>
