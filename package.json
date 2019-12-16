@@ -31,13 +31,7 @@
     "lint:backend:eslint": "./node_modules/.bin/eslint --config .eslintrc.js --ext .js backend --ignore-path .eslintignore --fix",
     "lint:frontend:eslint": "./node_modules/.bin/eslint --ext .js,.vue frontend --ignore-path .eslintignore --fix",
     "lint:frontend:sass": "./node_modules/.bin/sass-lint frontend/scss/**/*.scss --verbose --no-exit --config .sasslintrc --fix",
-    "lint:frontend:sass-vue": "./node_modules/.bin/sass-lint-vue frontend/components frontend/pages --config .sasslintrc --fix",
-    "precommit": "npm run lint:backend:eslint && npm run lint:frontend:eslint && npm run lint:frontend:sass && npm run lint:frontend:sass-vue"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run precommit"
-    }
+    "lint:frontend:sass-vue": "./node_modules/.bin/sass-lint-vue frontend/components frontend/pages --config .sasslintrc --fix"
   },
   "dependencies": {
     "axios": "^0.18.1",

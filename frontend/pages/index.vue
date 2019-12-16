@@ -26,7 +26,7 @@
               class="title-background"
               viewBox="0 0 100 40"
               preserveAspectRatio="none">
-              <polygon points="0,10 90,0 100,40 10,40 0,20" />
+              <polygon points="0,10 90,0 100,40 10,40 0,20"/>
             </svg>
             <h1 class="title-text text-white">
               LVIV UNIVERSITY

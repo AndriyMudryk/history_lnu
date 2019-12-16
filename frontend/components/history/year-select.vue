@@ -6,7 +6,7 @@
       size="lg"
       class="arrow"
       :class="{'disabled': yearIndex === 0}"
-      @click="onArrowClick(-1)" />
+      @click="onArrowClick(-1)"/>
     <h2 class="year mx-5">
       {{ years[yearIndex].year }}
     </h2>
@@ -15,7 +15,7 @@
       size="lg"
       class="arrow"
       :class="{'disabled': yearIndex === years.length - 1}"
-      @click="onArrowClick(1)" />
+      @click="onArrowClick(1)"/>
   </div>
 </template>
 

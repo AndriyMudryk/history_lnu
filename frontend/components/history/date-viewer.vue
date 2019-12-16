@@ -7,7 +7,7 @@
       :class="[direction(index) ? 'left' : 'right']">
       <event
         :direction="direction(index)"
-        :event="event" />
+        :event="event"/>
     </div>
   </div>
 </template>
