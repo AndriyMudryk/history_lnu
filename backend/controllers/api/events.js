@@ -2,7 +2,7 @@ const express = require("express");
 /*const bodyParser = require("body-parser");*/
 
 const rootPath = "../../";
-const Period = require(rootPath + "services/Period");
+const Events = require(rootPath + "services/Events");
 /*const urlencodedParser = bodyParser.urlencoded({extended: false});*/
 const {
   wrapPromiseResponse/*,
@@ -11,17 +11,12 @@ const {
 
 const router = express.Router();
 
-router.get("/:id", wrapPromiseResponse(
-  function (req) {
-    const id = parseInt(req.params.id, 10);
-    return Period.getPeriod(id);
-  }
-));
-
-
 router.get("/", wrapPromiseResponse(
-  function () {
-    return Period.getPeriods();
+  function (req) {
+    const periodId = parseInt(req.query.periodId, 10);
+    const search = req.query.search;
+
+    return Events.getEvents(periodId, search);
   }
 ));
 

@@ -28,6 +28,7 @@ export default {
     }
   },
 
+  //Period
   getPeriods() {
     return axiosInstance({
       method: "GET",
@@ -40,7 +41,17 @@ export default {
     return axiosInstance({
       method: "GET",
       url: restBaseUrl + "/period/" + periodId,
-      errorMessage: "Connot get period"
+      errorMessage: "Connot get period."
+    });
+  },
+
+  //Events
+  getEvents(params) {
+    return axiosInstance({
+      method: "GET",
+      url: restBaseUrl + "/events",
+      params: params,
+      errorMessage: "Cannot get events."
     });
   }
 };

@@ -7,6 +7,7 @@ const router = express.Router();
 
 
 router.use("/period", require("./period"));
+router.use("/events", require("./events"));
 
 // All authorized have access to the following routes. Further access is checked inside individual routes.
 //router.use("/cascade", require("./cascade"));

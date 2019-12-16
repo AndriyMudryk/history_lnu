@@ -1,13 +1,19 @@
 <template>
   <div class="period d-flex flex-column">
-    <div class="flex-grow-1">
-      
+    <div class="events-wrapper flex-grow-1">
+      <events
+        :period-id="period.id"
+        :search="searchPattern"/>
     </div>
-      <div class="container-fluid bg-dark p-3">
+      <div class="bottom-period-info container-fluid bg-dark p-3">
         <div class="d-flex">
-          <div class="period-title text-white">
+          <h6 class="period-title text-white pt-1">
             {{period.title}}
-          </div>
+          </h6>
+          <svg-icon
+            :icon="isDescriptionOpen ? 'info' : 'info'"
+            class="description-icon ml-2"
+            @click="toggleDescription"/>
           <div class="search d-flex alight-items-center">
             <div 
               v-show="searchHidden"
@@ -29,19 +35,23 @@
               @click="onSearchClick"/>
           </div>
         </div>
+        <div 
+          v-if="isDescriptionOpen"
+          class="text-white px-5">
+          {{period.description}}
+        </div>
       </div>
   </div>
 </template>
 
 <script>
 import api from "~/api";
+import events from "~/components/events";
 
 export default {
-/*  data() {
-    return {
-
-    };
-  },*/
+  components: {
+    events: events
+  },
 
   async asyncData({route, redirect}) {
     let period;
@@ -54,7 +64,8 @@ export default {
     return {
       period: period,
       searchHidden: true,
-      searchPattern: ""
+      searchPattern: "",
+      isDescriptionOpen: false
     };
   },
 
@@ -73,6 +84,11 @@ export default {
       const me = this;
       me.searchHidden = true;
       me.$refs.searchInput.blur();
+    },
+
+    toggleDescription() {
+      const me = this;
+      me.isDescriptionOpen = !me.isDescriptionOpen
     }
   }
 };
@@ -85,27 +101,40 @@ export default {
   background-image: url("../static/lnu.jpg");
   background-size: cover;
 
-  .search {
-    margin-left: auto;
+  .events-wrapper {
+    overflow: auto;
+  }
 
-    .search-input {
-      appearance: none;
-      -webkit-appearance: none;
-      background: transparent;
-      border: none;
-      width: auto;
-      outline: none;
+  .bottom-period-info {
 
-      &:focus {
-        border-bottom: 1px solid #FFFFFF;
+    .description-icon {
+      svg {
+        fill: #FFFFFF;
       }
     }
 
-    .search-icon {
-      font-size: 20px;
+    .search {
+      margin-left: auto;
 
-      svg {
-        fill: #FFFFFF;
+      .search-input {
+        appearance: none;
+        -webkit-appearance: none;
+        background: transparent;
+        border: none;
+        width: auto;
+        outline: none;
+
+        &:focus {
+          border-bottom: 1px solid #FFFFFF;
+        }
+      }
+
+      .search-icon {
+        font-size: 20px;
+
+        svg {
+          fill: #FFFFFF;
+        }
       }
     }
   }
