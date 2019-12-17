@@ -1,6 +1,6 @@
 # src
 
-> Vue Nuxt fh prject
+> Vue Nuxt lnu prject
 
 ## Build Setup
 
@@ -46,7 +46,7 @@ pm2 logs --lines 15                    # displaying logs of all processes in rea
 
 # Run node task for process manager in development
 
-npm run dev                            # shortcut for launching pm2 process. Starts bi-backend-dev application
+npm run dev                            # shortcut for launching pm2 process. Starts lnu-app application
                                        # (run "dev" task from package.json)
 `
 watch: if files are changes then server restarts automatically
@@ -55,10 +55,10 @@ ignore-watch: folders and files to ignore on watch
 
 # Microservice
 `
-pm2 stop fh-app                     # stop application using pm2 with name "fh-app"
-pm2 start fh-app                    # start application using pm2 with name "fh-app"
-pm2 delete fh-app                   # remove application using pm2 with name "fh-app"
-pm2 startOrRestart fh-app           # start or restart application using pm2 with name "fh-app"
+pm2 stop lnu-app                     # stop application using pm2 with name "lnu-app"
+pm2 start lnu-app                    # start application using pm2 with name "lnu-app"
+pm2 delete lnu-app                   # remove application using pm2 with name "lnu-app"
+pm2 startOrRestart lnu-app           # start or restart application using pm2 with name "lnu-app"
 `
 
 # Installing nvm optionally
@@ -90,4 +90,4 @@ For detailed explanation on how things work, checkout the
 
 For linux machines install libfontconfig1 and libxrender1 packages (Required for PDF generation)
 
-To restore clean database run "psql -U %db_user% -h %db_host% -d amigo -f ./scripts/amigo.bak"
+To restore clean database run "psql -U %db_user% -h %db_host% -d lnu-app -f ./scripts/lnu-app.bak"

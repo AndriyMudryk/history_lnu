@@ -30,7 +30,7 @@
               @keyup.enter="onSearch"
               @blur="onSearch"/>
             <svg-icon
-              icon="account"
+              icon="search"
               class="search-icon"
               @click="onSearchClick"/>
           </div>

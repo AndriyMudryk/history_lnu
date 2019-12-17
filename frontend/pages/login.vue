@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-center text-white mb-4">
-            Secure Login
+            Login
           </h2>
           <!--         <h4 class="text-center text-white mb-4">Existing Users</h4> -->
           <div class="row">

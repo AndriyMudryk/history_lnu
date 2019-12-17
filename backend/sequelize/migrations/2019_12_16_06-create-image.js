@@ -84,7 +84,7 @@ module.exports = {
             }, {
               "id": 11,
               "event_id": 11,
-              "path": "period_1/11.jpg",
+              "path": "period_1/11.png",
               "title": "Богдан Хмельницький."
             }
           ]

@@ -4,17 +4,19 @@
     <div
       v-for="event in events"
       :key="event.id"
+      :class="{'flex-row-reverse': event.id % 2 === 0}"
       class="d-flex event-wrapper bg-dark p-2 my-2 shadow shadow-sm border border-white">
-      <div>
+      <div class="flex-grow-1">
         <h5 class="text-white m-3">
           {{event.title}}
         </h5>
-        <div class="text-white mx-3">
+        <div class="text-white mx-3 mb-3">
           {{event.description}}
         </div>
       </div>
-      <div>
-
+      <div class="m-3">
+        <imageViewer
+          :event-id="event.id"/>
       </div>
     </div>
     </div>
@@ -23,8 +25,13 @@
 
 <script>
 import api from "~/api";
+import imageViewer from "~/components/image-viewer";
 
 export default {
+  components: {
+    imageViewer
+  },
+
   props: {
     periodId: {
       type: Number,
@@ -83,7 +90,7 @@ export default {
   height: 100%;
 
   .event-wrapper {
-    opacity: 0.95;
+    opacity: 0.97;
   }
 }
 </style>

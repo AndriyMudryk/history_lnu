@@ -41,7 +41,7 @@ export default {
     return axiosInstance({
       method: "GET",
       url: restBaseUrl + "/period/" + periodId,
-      errorMessage: "Connot get period."
+      errorMessage: "Cannot get period."
     });
   },
 
@@ -53,5 +53,17 @@ export default {
       params: params,
       errorMessage: "Cannot get events."
     });
+  },
+
+  //images
+  getImages(eventId) {
+    return axiosInstance({
+      method: "GET",
+      url: restBaseUrl + "/images",
+      params: {
+        eventId: eventId
+      },
+      errorMessage: "Cannot get Images."
+    })
   }
 };
