@@ -109,12 +109,12 @@ module.exports = {
           }, {
             "id": 16,
             "event_id": 16,
-            "path": "period_4/5.tif",
+            "path": "period_2/5.jpg",
             "title": "Ректорське і деканські берла (скіпетри)."
           }, {
             "id": 17,
             "event_id": 16,
-            "path": "period_2/6.tif",
+            "path": "period_2/6.jpg",
             "title": "Антін Ангелович"
           }, {
             "id": 18,
@@ -159,12 +159,12 @@ module.exports = {
           }, {
             "id": 26,
             "event_id": 18,
-            "path": "period_2/15.tif",
+            "path": "period_2/15.jpg",
             "title": "Маркіян Шашкевич"
           }, {
             "id": 27,
             "event_id": 18,
-            "path": "period_2/15a.tif",
+            "path": "period_2/15a.jpg",
             "title": "Обкладинка альманаху “Русалка Дністровая”"
           }, {
             "id": 28,
