@@ -387,90 +387,90 @@ module.exports = {
             "path": "period_3/20.png",
             "title": "Гуґо Штайнгауз"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
+            "id": 72,
+            "event_id": 41,
+            "path": "period_4/1.jpg",
             "title": "Указ Президії Верховної Ради УРСР про присвоєння Львівському університету імені Івана Франка"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
+            "id": 73,
+            "event_id": 41,
+            "path": "period_4/2.jpg",
             "title": "Станіслав Лем"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
+            "id": 74,
+            "event_id": 42,
+            "path": "period_4/3.jpg",
             "title": "Михайло Марченко"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
+            "id": 75,
+            "event_id": 42,
+            "path": "period_4/4.jpg",
             "title": "Євген Лазаренко"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
+            "id": 76,
+            "event_id": 42,
+            "path": "period_4/5.jpg",
             "title": "Микола Паше-Озерський"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
+            "id": 77,
+            "event_id": 43,
+            "path": "period_4/6.jpg",
             "title": "Юліуш Макаревич"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 78,
+            "event_id": 44,
+            "path": "period_4/7.jpg",
+            "title": "Обкладинка книжки Ольги Осередчук і Тараса Гривула “«Процес -59». Покоління борців та героїв”"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 79,
+            "event_id": 45,
+            "path": "period_4/8.jpg",
+            "title": "Пам’ятник професорам, розстріляним у 1941 р. на Вулецьких пагорбах"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 80,
+            "event_id": 45,
+            "path": "period_4/9.jpg",
+            "title": "Тадеуш Бой-Желенський"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 81,
+            "event_id": 45,
+            "path": "period_4/10.jpg",
+            "title": "Роман Льоншан де Бер’є"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 82,
+            "event_id": 55,
+            "path": "period_5/1.jpg",
+            "title": "Іван Вакарчук"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 83,
+            "event_id": 56,
+            "path": "period_5/2.jpg",
+            "title": "Хоругва Львівського університету."
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 84,
+            "event_id": 57,
+            "path": "period_5/3.jpg",
+            "title": "Володимир Кульчицький"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 85,
+            "event_id": 57,
+            "path": "period_5/4.jpg",
+            "title": "Андрій Содомора"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 86,
+            "event_id": 58,
+            "path": "period_5/5.jpg",
+            "title": "Обкладинка видання “Філософські проблеми науки”"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 87,
+            "event_id": 59,
+            "path": "period_5/6.jpg",
+            "title": "Святослав Вакарчук"
           }, {
-            "id": 71,
-            "event_id": 31,
-            "path": "period_4/.png",
-            "title": ""
+            "id": 88,
+            "event_id": 59,
+            "path": "period_5/7.jpg",
+            "title": "Ірина Швайдак"
           }
           ]
         );
