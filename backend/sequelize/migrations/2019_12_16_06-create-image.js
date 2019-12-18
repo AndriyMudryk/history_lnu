@@ -386,6 +386,91 @@ module.exports = {
             "event_id": 31,
             "path": "period_3/20.png",
             "title": "Гуґо Штайнгауз"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": "Указ Президії Верховної Ради УРСР про присвоєння Львівському університету імені Івана Франка"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": "Станіслав Лем"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": "Михайло Марченко"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": "Євген Лазаренко"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": "Микола Паше-Озерський"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": "Юліуш Макаревич"
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
+          }, {
+            "id": 71,
+            "event_id": 31,
+            "path": "period_4/.png",
+            "title": ""
           }
           ]
         );
