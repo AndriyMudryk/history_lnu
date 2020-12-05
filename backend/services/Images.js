@@ -55,7 +55,8 @@ function getImage(res, imageId) {
         jpg: "image/jpeg",
         jpeg: "image/jpeg",
         png: "image/png",
-        svg: "image/svg+xml"
+        svg: "image/svg+xml",
+        tif: "image/tiff"
       };
       const filePath = config.projectDir + "/images/" + imageFileName;
       const contentType = mime[path.extname(filePath).slice(1)];
